@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "init": "^0.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.0",
+    "nodemailer": "^9.0.0"
+  },
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "start": "node server.js"
+  }
+}
