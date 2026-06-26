@@ -52,8 +52,7 @@ const userLoginController = async (req,res) => {
   // data
   const {email, password} = req.body
 
-  // chcak user email 
-  // check user email
+  // check user email (register chhe ke nai)
 const user = await userModel.findOne({
   email
 }).select('+password');
@@ -64,7 +63,7 @@ if (!user) {
   });
 }
 
-// compare password
+// compare password (password sacho chhe ke nai)
 const isValidPassword = await user.comparePassword(password);
 
 if (!isValidPassword) {
