@@ -36,7 +36,7 @@ const createTransaction = async (req,res) => {
     })
   }
 
-  // chack axist (che ke nai ) fromAccount or toAccount
+  // chack user axist (che ke nai ) fromAccount or toAccount
   const fromUserAccount = await accountModel.findOne({
     _id:fromAcoount, 
   })
